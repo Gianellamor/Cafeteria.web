@@ -89,12 +89,11 @@
 }
 
 .logo {
-    width: 20px;
-    height: 25px;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 0%;
+
+
+    display: flex;
+    align-items: center;
+
 }
 
 #foto {
@@ -137,11 +136,50 @@ header {
 }
 
 .contact {
-    color: rgba(100, 13, 13, 0.89);
-    background-color: rgba(126, 25, 25, 0.671);
+    color: rgba(0, 0, 0, 0.89);
+    background-color: rgb(245, 245, 194);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    /**
     margin: 15px 20px 25px 15px;
-    padding: 15px 25px 20px 15px;
-    border: solid 3px rgb(80, 3, 3);
+    padding: 15px 25px 20px 15px;**/
+
+    border: solid 3px rgba(226, 222, 161, 0.527);
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form button {
+    background-color: rgb(135, 135, 207);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid;
+    border-radius: 4px;
 }
 
 .barra {
