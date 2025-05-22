@@ -89,8 +89,6 @@
 }
 
 .logo {
-
-
     display: flex;
     align-items: center;
 
@@ -137,7 +135,7 @@ header {
 
 .contact {
     color: rgba(0, 0, 0, 0.89);
-    background-color: rgb(245, 245, 194);
+    background-color: rgb(247, 247, 170);
 
     display: flex;
     flex-wrap: wrap;
@@ -206,4 +204,18 @@ header {
 
 .fa-twitter {
     --fa: "\f099";
+}
+
+.indice {
+
+    text-decoration-color: black;
+}
+
+.textopie {
+    color: maroon;
+    text-align: center;
+    background-color: #fffd8f;
+    margin-right: 200px;
+    margin-left: 200px;
+    border-top: 15px;
 }
