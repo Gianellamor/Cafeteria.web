@@ -202,9 +202,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    /**
-    margin: 15px 20px 25px 15px;
-    padding: 15px 25px 20px 15px;**/
+
 
     border: solid 3px rgba(226, 222, 161, 0.527);
 }
@@ -309,7 +307,7 @@ body {
     background-size: contain;
 }
 
-/* Style the header */
+
 .header {
     background-color: #f1f1f1;
     padding: 30px;
@@ -317,7 +315,7 @@ body {
     font-size: 35px;
 }
 
-/* Container for flexboxes */
+
 .row {
     display: -webkit-flex;
     display: flex;
@@ -333,23 +331,32 @@ body {
     text-align: top;
 }
 
-/* Create three equal columns that sits next to each other */
 .column {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
     padding: 1px;
-    height: 500px;
+    height: 900px;
     margin-right: 80px;
     margin-left: 50px;
 
     text-align: center;
     background-color: #f1f1f1;
 
-    /* Should be removed. Only for demonstration */
+    font-size: 15px;
+    color: rgb(10, 6, 6);
+    font-family: cursive, sans-serif;
+
+
 }
 
-/* Style the footer */
+.com {
+    font-size: 25px;
+    color: rgb(241, 169, 60);
+    font-family: sans-serif, sans-serif;
+}
+
+
 .footer {
     background-color: #f1f1f1;
     padding: 10px;
@@ -357,7 +364,6 @@ body {
 
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
     .row {
         -webkit-flex-direction: column;
@@ -376,6 +382,8 @@ body {
 
 .up {
     text-align: center;
+    font-size: 25px;
+    font-family: serif;
 
 }
 
@@ -388,79 +396,57 @@ body {
 
 .footer {
     background-color: #ffff88;
-    /* Amarillo pastel suave */
     padding: 30px 20px;
     margin-top: auto;
-    /* Empuja el pie de página hacia abajo */
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
-    /* Sombra sutil hacia arriba */
     text-align: center;
-    /* Centra el contenido dentro del pie de página */
     color: #555;
-    /* Color de texto general */
+
 }
 
 .footer-content {
     max-width: 1200px;
-    /* Ancho máximo para el contenido del pie de página */
     margin: 0 auto;
-    /* Centra el contenido */
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Centra horizontalmente los elementos */
     justify-content: center;
-    /* Centra verticalmente si hay espacio */
 }
 
-/* Estilos para los iconos sociales */
+
 .social-icons-footer {
     list-style: none;
     padding: 0;
     margin: 0 0 20px 0;
-    /* Margen inferior para separar del texto */
     display: flex;
     gap: 25px;
-    /* Espacio entre los iconos */
 }
 
 .social-icons-footer li {
     display: inline-block;
-    /* Asegura que los elementos estén en línea */
 }
 
 .social-icons-footer a {
     text-decoration: none;
     color: #a39600;
-    /* Un tono de amarillo-marrón para los iconos por defecto */
     font-size: 30px;
-    /* Tamaño grande para los iconos */
     width: 60px;
-    /* Ancho del área del icono */
     height: 60px;
-    /* Alto del área del icono */
     border-radius: 50%;
-    /* Iconos circulares */
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #ffe066;
-    /* Fondo un poco más oscuro que el pie de página */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Sombra para los iconos */
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-    /* Transiciones suaves */
 }
 
 .social-icons-footer a:hover {
     background-color: #ffdf2b;
-    /* Amarillo más vibrante al pasar el ratón */
     color: #fff;
-    /* Blanco para el icono al pasar el ratón */
     transform: translateY(-5px) scale(1.05);
-    /* Ligeramente elevado y un poco más grande */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    /* Sombra más pronunciada al pasar el ratón */
+
 }
 
 
@@ -476,7 +462,7 @@ body {
 /*BARRA*/
 .navbar {
     background-color: #fdfd96;
-    /* Amarillo pastel suave */
+
     padding: 10px 25px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -507,55 +493,42 @@ body {
 
 .navbar-social-icons {
     list-style: none;
-    /* Quita los puntos de la lista */
     margin: 0;
     padding: 0;
     display: flex;
-    /* Para poner los iconos en línea */
     gap: 15px;
-    /* Espacio entre cada icono */
+
 }
 
 .navbar-social-icons li {
     display: inline-block;
-    /* Asegura que los elementos estén en línea */
 }
 
 .navbar-social-icons a {
     text-decoration: none;
     color: #777;
-    /* Color base de los iconos */
     font-size: 18px;
-    /* Tamaño de los iconos: Pequeño */
     width: 35px;
-    /* Ancho del área del icono */
     height: 35px;
-    /* Alto del área del icono */
     border-radius: 50%;
-    /* Hace que el fondo del icono sea circular */
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #ffe066;
-    /* Un tono de amarillo pastel un poco más oscuro */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Sombra sutil para cada icono */
+
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-    /* Transiciones suaves */
 }
 
 .navbar-social-icons a:hover {
     background-color: #ffd700;
-    /* Amarillo más vibrante al pasar el ratón */
     color: #fff;
-    /* Blanco para el icono al pasar el ratón */
     transform: translateY(-2px) scale(1.05);
-    /* Ligeramente elevado y un poco más grande */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Sombra más pronunciada al pasar el ratón */
+
 }
 
-/* Colores específicos para los iconos (opcional, para un toque extra) */
+
 .navbar-social-icons a .fa-instagram {
     color: #a39600;
 }
@@ -568,7 +541,7 @@ body {
     color: #a39600;
 }
 
-/* Cambiar el color del icono a blanco en hover para contraste */
+
 .navbar-social-icons a:hover .fa-instagram,
 .navbar-social-icons a:hover .fa-twitter,
 .navbar-social-icons a:hover .fa-facebook-f {
