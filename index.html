@@ -10,15 +10,21 @@
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/6b48925c26.js" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
 </head>
 
 <body id="body">
     <!--para agrupar links img o logos de la pag-->
     <header>
-
         <nav class="navbar">
-
-            <div class="navbar-brand">
+            <div>
+                <img class="element-icono" src="img/favicon.ico" alt="Icono">
 
             </div>
             <ul class="navbar-social-icons">
@@ -28,20 +34,9 @@
                             class="fab fa-twitter"></i></a></li>
                 <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
                         aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+
             </ul>
-
-            <div>
-                <li>
-                    <a href="index.html" target="_blank" style="color:rgb(2, 2, 88)">Inicio</a>
-                </li>
-                <li>
-                    <a href="contacto.html" style="color:rgb(2, 2, 88) ">Contacto</a>
-
-                </li>
-            </div>
         </nav>
-
-
 
 
     </header>
@@ -51,22 +46,26 @@
         </nav>
         <a id="home"></a>
 
-        <section>
+
+
+        <aside class="sidebar">
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="#Titulo">Inicio</a></li>
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="catalogo.html" style="color:rgb(2, 2, 88) ">Catálogo</a></li>
+                    <li><a href="index.html" style="color:rgb(2, 2, 88)">Principal</a></li>
+                    <li><a href="contacto.html" style="color:rgb(2, 2, 88) ">Contacto</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <section id="ll">
             <h1 id="Titulo" style="font-size: 300%"><strong> Pompompurin cafe</strong></h1>
 
 
         </section>
-        <aside class="sidebar">
-            <nav class="main-menu">
-                <ul>
-                    <li><a href="#intro">Inicio</a></li>
-                    <li><a href="#blog">Catálogo</a></li>
-                    <li><a href="#about">Nosotros</a></li>
-                </ul>
-            </nav>
-        </aside>
 
-        <a></a>
+
         <h1 id="intro">Conoce todo lo que tenemos para ofrecerte </h1>
         <section class="articulos">
             <article class="articulo" id="borde" style="font-size: 250%">
@@ -114,9 +113,6 @@
 
 
         </section>
-        <p class="textopie" style="font-size: 175%" id="blog">Visita nuestro menu completo aqui: <a href="catalogo.html"
-                style="color: rgb(102, 23, 23);"><b>Catalogo</b></a></p>
-
 
 </body>
 <section id="about">

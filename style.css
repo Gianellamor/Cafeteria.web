@@ -71,45 +71,38 @@
 
 /*INDICE MENU*/
 .sidebar {
+    position: fixed;
     background-color: rgba#fafa6f;
     padding-top: 70px;
-    /* Espaciado superior */
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.08);
-    /* Sombra sutil a la derecha */
-    position: fixed;
-
     top: 0;
     left: 0;
     overflow-y: auto;
-    /* Permite scroll si el contenido del menú es muy largo */
+    z-index: 1000;
+
 }
 
 .main-menu ul {
     list-style: none;
-    /* Elimina los puntos de la lista */
     padding: 0;
     margin: 0;
 }
 
 .main-menu li {
+
     margin-bottom: 5px;
-    /* Espacio entre los ítems del menú */
+
 }
 
 .main-menu a {
     display: block;
-    /* Hace que todo el área del enlace sea clickable */
     text-decoration: none;
     color: #555;
-    /* Color de texto inicial */
     padding: 15px 25px;
-    /* Espaciado interno para cada ítem */
     font-size: 1.1em;
     font-weight: 500;
     border-left: 5px solid transparent;
-    /* Borde transparente para la transición */
     transition: background-color 0.3s ease, color 0.3s ease, border-left-color 0.3s ease;
-    /* Transiciones suaves */
 }
 
 .main-menu a:hover {
@@ -123,13 +116,12 @@
     /* Sombra interna sutil en hover */
 }
 
-/* Estilos para el contenido principal (para que no quede debajo del menú) */
+
 .content {
     margin-left: 220px;
-    /* Deja espacio a la izquierda igual al ancho del menú */
     padding: 20px;
     flex-grow: 1;
-    /* Permite que el contenido ocupe el espacio restante */
+
 }
 
 .content h1,
@@ -194,25 +186,163 @@ header {
     padding: 30px 15px;
 }
 
+/*CONTACTO*/
 .contact {
-    color: rgba(0, 0, 0, 0.89);
-    background-color: #ffe066;
+
+
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(255, 247, 138, 0.863);
+    /* Amarillo pastel */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* Centra el contenido dentro del contenedor */
+
+    color: rgba(53, 26, 16, 0.89);
+    background-color: #ffcf75;
 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+    border: solid 3px rgb(248, 146, 28)
+}
 
+.contact-form textarea {
+    resize: vertical;
+    /* Permite redimensionar verticalmente */
+    min-height: 100px;
+}
 
-    border: solid 3px rgba(226, 222, 161, 0.527);
+.contact-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    /* Alinea las etiquetas y campos a la izquierda dentro del formulario */
 }
 
 .contact-info,
 .contact-form {
-    flex: 1;
+    text-align: center;
+    margin-left: 50px;
+    margin-bottom: 40px;
     padding: 20px;
-    box-sizing: border-box;
+    background-color: rgba(255, 243, 131, 0.863);
+    /* Naranja pastel más claro */
+    border-radius: 10px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+}
 
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #666;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: calc(100% - 20px);
+    /* Ajusta el ancho para el padding */
+    padding: 12px;
+    border: 1px solid #fffd8f;
+    /* Borde naranja pastel */
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: #fdf9bc;
+    /* Amarillo pastel muy claro para campos */
+    color: #333;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-button {
+    background-color: #ffc251;
+    /* Naranja pastel */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 10px rgba(247, 219, 94, 0.863);
+}
+
+.submit-button:hover {
+    background-color: #943a10;
+    /* Naranja pastel más oscuro al pasar el ratón */
+    transform: translateY(-2px);
+    box-shadow: 0 7px 14px rgba(225, 255, 55, 0.24);
+}
+
+.whatsapp-container {
+    margin-top: 10px;
+}
+
+
+
+.whatsapp-link {
+    display: inline-flex;
+    align-items: center;
+    background-color: hsl(32, 100%, 71%);
+    /* Verde WhatsApp */
+    color: rgba(26, 21, 2, 0.795);
+    padding: 12px 25px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    font-size: 10px;
+
+}
+
+.whatsapp-link:hover {
+    background-color: #e98e44;
+    transform: translateY(-2px);
+}
+
+.whatsapp-icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    /* Alinea las etiquetas y campos a la izquierda dentro del formulario */
+}
+
+.contact-info,
+.contact-form {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px 70px 20px 70px;
+    background-color: #ffe283;
+    /* Naranja pastel más claro */
+    border-radius: 10px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+
+    margin-left: 130px;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+.section-title {
+    color: #6B0504;
+    /* Naranja pastel */
+    margin-bottom: 25px;
+    font-size: 2em;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #555;
 }
 
 .contact-form label {
@@ -221,7 +351,7 @@ header {
 }
 
 .contact-form button {
-    background-color: rgb(135, 135, 207);
+    background-color: #D45B3E;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -237,6 +367,36 @@ header {
     margin-bottom: 10px;
     border: 1px solid;
     border-radius: 4px;
+}
+
+.map-section {
+    margin-top: 40px;
+    width: 100%;
+    background-color: #fdfb7ce8;
+    /* Amarillo pastel */
+    padding-top: 20px;
+    padding-bottom: 0;
+    /* Asegura que el mapa ocupe todo el espacio inferior */
+}
+
+.map-title {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #6B0504;
+    /* Naranja pastel */
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.map-section iframe {
+    display: block;
+    /* Elimina el espacio extra debajo del iframe */
+    width: 100%;
+    /* Asegura que el mapa ocupe todo el ancho */
+    border-radius: 0 0 15px 15px;
+    /* Bordes redondeados solo en la parte inferior si el contenedor tiene */
+    overflow: hidden;
+    /* Asegura que los bordes redondeados se apliquen correctamente */
 }
 
 .barra {
@@ -384,6 +544,8 @@ body {
     text-align: center;
     font-size: 25px;
     font-family: serif;
+    margin-right: 70px;
+    margin-left: 70px;
 
 }
 
@@ -460,6 +622,19 @@ body {
 
 
 /*BARRA*/
+.element-icono {
+    position: absolute;
+    /* O 'relative' si está dentro de un contenedor específico */
+    top: 2px;
+    left: 10px;
+    width: 50px;
+    /* Ajusta el tamaño según tu necesidad */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    z-index: 100;
+
+}
+
 .navbar {
     background-color: #fdfd96;
 
@@ -497,6 +672,7 @@ body {
     padding: 0;
     display: flex;
     gap: 15px;
+    color: #928a44;
 
 }
 
@@ -546,4 +722,26 @@ body {
 .navbar-social-icons a:hover .fa-twitter,
 .navbar-social-icons a:hover .fa-facebook-f {
     color: #fff;
+}
+
+/*MENUUUUUU*/
+#toggleIndex.visible {
+    display: block;
+    /* Visible cuando la barra lateral está cerrada */
+}
+
+#toggleIndex {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    /* Asegura que esté por encima de la barra lateral */
+    display: none;
+    /* Oculto por defecto */
 }
